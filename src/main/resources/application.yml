@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: IntegralIndicator
+  main:
+    banner-mode: "off"
+  jmx:
+    enabled: false
