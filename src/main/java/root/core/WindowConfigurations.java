@@ -2,12 +2,8 @@ package root.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import root.controller.DictionaryEditController;
 import root.controller.MainController;
-import root.controller.ProductController;
-import root.ui.window.DictionaryEditWindow;
 import root.ui.window.MainWindow;
-import root.ui.window.ProductEditWindow;
 
 import java.io.IOException;
 
