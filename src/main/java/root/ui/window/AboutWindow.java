@@ -5,6 +5,6 @@ import root.controller.AboutController;
 public class AboutWindow extends AbstractWindow<AboutController> {
 
     protected AboutWindow() {
-        super("/window/about.fxml", "О программе", false);
+        super("/window/fxml/about.fxml", "О программе", false);
     }
 }

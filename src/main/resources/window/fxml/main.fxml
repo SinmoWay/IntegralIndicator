@@ -5,6 +5,6 @@
 <VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="root.controller.MainController">
     <stylesheets>
-        <URL value="@css/main.css"/>
+        <URL value="@../css/main.css"/>
     </stylesheets>
 </VBox>

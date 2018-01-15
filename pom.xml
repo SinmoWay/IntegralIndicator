@@ -32,22 +32,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <finalName>${project.build.finalName}</finalName>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>com.zenjava</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>8.8.3</version>
@@ -56,9 +40,6 @@
                     <verbose>true</verbose>
                     <preLoader>root.core.ApplicationPreloader</preLoader>
                     <allPermissions>true</allPermissions>
-                    <updateExistingJar>true</updateExistingJar>
-                    <skipCopyingDependencies>true</skipCopyingDependencies>
-                    <useLibFolderContentForManifestClasspath>true</useLibFolderContentForManifestClasspath>
                 </configuration>
                 <executions>
                     <execution>
@@ -66,13 +47,6 @@
                         <phase>package</phase>
                         <goals>
                             <goal>build-jar</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>create-native</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>build-native</goal>
                         </goals>
                     </execution>
                 </executions>

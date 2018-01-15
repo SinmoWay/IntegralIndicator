@@ -19,25 +19,4 @@ public class WindowConfigurations {
     public MainController getMainController() throws IOException {
         return getMainWindow().getController();
     }
-
-    @Bean
-    public DictionaryEditWindow getDicEdWindow() throws IOException {
-        return new DictionaryEditWindow();
-    }
-    
-    @Bean
-    public DictionaryEditController getDicEdController() throws IOException {
-        return getDicEdWindow().getController();
-    }
-
-    @Bean
-    public ProductEditWindow getProdEdWindow() throws IOException {
-        return new ProductEditWindow();
-    }
-
-    @Bean
-    public ProductController getProdEdController() throws IOException {
-        return getProdEdWindow().getController();
-    }
-
 }
