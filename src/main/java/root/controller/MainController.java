@@ -1,5 +1,6 @@
 package root.controller;
 
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.stage.WindowEvent;
 
@@ -12,11 +13,11 @@ public class MainController extends AbstractController {
 
     @Override
     public EventHandler<WindowEvent> onStart() {
-        return null;
+        return Event::consume;
     }
 
     @Override
     public EventHandler<WindowEvent> onEnd() {
-        return null;
+        return Event::consume;
     }
 }
