@@ -6,8 +6,6 @@ import root.ui.builder.DialogBuilder;
 import root.ui.builder.ImgResourceBuilder;
 import root.ui.builder.TreeBuilder;
 
-import java.io.IOException;
-
 @Configuration
 public class CommonBeanConfiguration {
 
@@ -22,13 +20,7 @@ public class CommonBeanConfiguration {
     }
 
     @Bean
-    public TreeBuilder getTreeBuilder() throws IOException {
+    public TreeBuilder getTreeBuilder() {
         return new TreeBuilder();
     }
-
-    @Bean
-    public JsonConverter getJsonConverter() {
-        return new JsonConverter();
-    }
-
 }

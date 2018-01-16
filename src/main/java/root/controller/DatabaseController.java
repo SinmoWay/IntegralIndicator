@@ -4,8 +4,7 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.stage.WindowEvent;
 
-public class MainController extends AbstractController {
-
+public class DatabaseController extends AbstractController {
     @Override
     public void init() {
 
