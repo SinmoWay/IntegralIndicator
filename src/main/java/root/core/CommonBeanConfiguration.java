@@ -23,4 +23,5 @@ public class CommonBeanConfiguration {
     public TreeBuilder getTreeBuilder() {
         return new TreeBuilder();
     }
+
 }

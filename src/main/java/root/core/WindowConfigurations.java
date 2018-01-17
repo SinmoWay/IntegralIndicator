@@ -2,7 +2,7 @@ package root.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import root.controller.MainController;
+import root.ui.window.AboutWindow;
 import root.ui.window.MainWindow;
 
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class WindowConfigurations {
     }
 
     @Bean
-    public MainController getMainController() throws IOException {
-        return getMainWindow().getController();
+    public AboutWindow getAboutWindow() throws IOException {
+        return new AboutWindow();
     }
 }

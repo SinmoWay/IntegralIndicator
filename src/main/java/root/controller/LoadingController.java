@@ -19,10 +19,6 @@ public class LoadingController extends AbstractController {
     }
 
     @Override
-    public void init() {
-    }
-
-    @Override
     public EventHandler<WindowEvent> onStart() {
         return Event::consume;
     }
